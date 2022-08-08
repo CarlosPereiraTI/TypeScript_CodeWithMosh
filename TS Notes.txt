@@ -1,0 +1,21 @@
+Typescript Notes
+=================================================================================
+1- Install NodeJS [https://nodejs.org/en/]
+2- Install TypeScript # "npm i -g typesctipt" [Install it globally]
+   - Check TypeScript version "tsc -v"
+3- create a .ts file and compile using "tsc file.ts"   
+4- decalre an int variable: let age: number = 1;
+5- Environment configuration:
+	- init a tsconfig file: run command "tsc --init"
+	- In Modules uncomment rootDir and type ./src
+	- In Emit uncommment outDir and type "./dist"
+	- removeComments -> enable this option to do js file shorter
+	- noEmitErrors enable this option to avoid genearte js file when an error is present
+6 - Debugging:
+	- enable sourceMap in tsconfig.json
+	- open debug tool in vs code and create a launch.json file
+	- under program add the following line: "preLaunchTask": "tsc: build - tsconfig.json",
+7 - Built-in types:
+	JS: number, string, boolean, null, undefined, object
+	TS: number, string, boolean, null, undefined, object + any, unknown, never, enum and tuple
+	
